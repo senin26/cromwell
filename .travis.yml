@@ -19,6 +19,8 @@ before_cache:
   - find $HOME/.coursier/cache -name "ivydata-*.properties" -print -delete
   - find $HOME/.sbt -name "*.lock" -print -delete
 env:
+- secure: "0xgcB1CL4tnBCjaNGqIKjxuXkhpELRwK1XzruJhHWo13Z35HXS02dUgvvx4SHJlQRUCy/HfdgABwUfVtbf10XknEbKciAv+wjVW3HhdZ+MYl+WQv1UhBZXnaS56MlwFJFkPWwoRwLvyD4OssuLl6IpT3p5SoEeyPX+62kcBAvC2ybI4y8umhHth3FM2Koy3EVWCSDDd42uB1fu6os1PuRfc23slkDBcPjCPZgRaUA5x852UhLM5b0jVYDmMu8GOxzqJxMPaH7maIpSoVM1BeCPzXPgAqOT/2WGcsPFR03lsoXPr42kOlf89I1/tcHIG/0Gd/idCjM/76GYc4z+2m9HrT6RJa+iS6a8P3qNZuqUozlHLJxZNQxFXX66W8vG8N/3HbKYukPE0/Ueb0xBJPhwV+dyuFpP+YtiLA/MJ6qndLDjGjaVnixLK/j0rsteTvigKu7q+3grtuSqiEPDwWCj9Dp9DZg4H5raX85m+nKFVeGt169tS6OiUsoaGEUat2wawYWL5Q4ikEYiKKNC51qqjOlvWWXmn24yGHCV/5OJZNpQvLk4YKPs+cv0gojW8wWGonnjniSPGZ5pLKpsX1c9QZja4/dh+i1arUdMpse/lQ0XbpcullmntBupe9VYldgt8mU8fyqK/UOfViZ2YH1BRzcSk4UZe5sTBZVQQ27yw="
+
   matrix:
     # Setting this variable twice will cause the 'script' section to run twice with the respective env var invoked
     - >-
