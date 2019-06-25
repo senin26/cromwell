@@ -27,7 +27,7 @@ scripts/docker-compose-mysql/compose/mysql/data
 /common-workflow-language/
 # Vault rendered resources
 artifactory_credentials.properties
-aws_credentials
+aws_application.conf
 bcs_application.conf
 bcs_login.inc.sh
 centaur_secure.inc.conf
