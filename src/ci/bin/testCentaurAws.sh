@@ -19,9 +19,9 @@ cromwell::build::pip_install awscli --upgrade
 
 
 cromwell::build::run_centaur \
-    -i hello \
-    -i long_cmd \
-    #-i haplotypecaller.aws \
-    # -i singlesample.aws \
+    #-i hello \
+    #-i long_cmd \
+    -i haplotypecaller.aws \
+    -i singlesample.aws \
 
 cromwell::build::generate_code_coverage
