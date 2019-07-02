@@ -18,3 +18,15 @@ Need to file an issue? Head over to [our JIRA](https://broadworkbench.atlassian.
 As of May 2019, we are in the process of migrating all issues from Github to JIRA. At a later date to be announced, submitting new Github issues will be disabled.
 
 ![Jamie, the Cromwell pig](docs/jamie_the_cromwell_pig.png)
+
+from senin26:
+at the moment in the cromwell/centaur/src/main/resources/references at the line 49 'standardTestCases' is replaced for 'integrationTestCases'
+
+in centaur/src/resources/integrationTestCases/germline/haplotype-caller-workflow/HaplotypeCallerWF.aws.inputs.json at the line 12
+"s3://gatk-test-data/intervals/hg38_wgs_scattered_calling_intervals.txt" is replaced for s3://testcrmwlnondefionin
+
+in src/ci/bin/testCentaurAws.sh only this tests are left 
+	#-i hello \
+	#-i long_cmd \
+	-i haplotypecaller.aws \
+	#-i singlesample.aws \

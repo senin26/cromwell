@@ -9,7 +9,7 @@
   "HaplotypeCallerGvcf_GATK4.ref_fasta_index": "s3://broad-references/hg38/v0/Homo_sapiens_assembly38.fasta.fai",
 
   "##_COMMENT3": "INTERVALS",
-  "HaplotypeCallerGvcf_GATK4.scattered_calling_intervals_list": "s3://gatk-test-data/intervals/hg38_wgs_scattered_calling_intervals.txt",
+"HaplotypeCallerGvcf_GATK4.scattered_calling_intervals_list": "s3://testcrmwlnondefionin/hg38_wgs_scattered_calling_intervals.txt",
   "HaplotypeCallerGvcf_GATK4.HaplotypeCaller.interval_padding": 100,
 
   "##_COMMENT4": "DOCKERS",
