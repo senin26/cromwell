@@ -1,4 +1,4 @@
 {
-  "ReadFile.read_file.file": "s3://standalone-s3-bucket/meats.txt"
+  "ReadFile.read_file.file": "s3://testcrmwlnondefionin/meats.txt"
 }
 
