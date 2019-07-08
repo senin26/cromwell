@@ -29,9 +29,17 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 package cromwell.cloudsupport.aws.s3
-import software.amazon.awssdk.auth.credentials.AnonymousCredentialsProvider
+import software.amazon.awssdk.auth.credentials.{AnonymousCredentialsProvider, AwsCredentials, AwsSessionCredentials, StaticCredentialsProvider}
 import org.scalatest.{FlatSpec, Matchers, Tag}
 import software.amazon.awssdk.regions.Region
+import software.amazon.awssdk.services.sts.StsClient
+import software.amazon.awssdk.services.sts.model.AssumeRoleRequest
+import cromwell.cloudsupport.aws.auth.AwsAuthMode.OptionLookup
+import org.slf4j.LoggerFactory
+import software.amazon.awssdk.auth.credentials._
+import software.amazon.awssdk.regions.Region
+import software.amazon.awssdk.services.sts.StsClient
+import software.amazon.awssdk.services.sts.model.{AssumeRoleRequest, GetCallerIdentityRequest}
 
 class S3StorageSpec extends FlatSpec with Matchers {
 
@@ -56,6 +64,10 @@ class S3StorageSpec extends FlatSpec with Matchers {
       AnonymousCredentialsProvider.create.resolveCredentials(),
       Option(Region.US_EAST_1)
     )
+  }
+
+  it should "build s3 client with nondefault credentials" taggedAs S3StorageSpecUtils.AwsTest in {
+
   }
 
 }
